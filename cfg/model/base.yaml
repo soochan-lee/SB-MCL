@@ -1,0 +1,26 @@
+hidden_dim: 512
+
+# Image encoder
+x_encoder: CnnEncoder
+x_encoder_ckpt: null
+
+# Training
+batch_size: 16
+eval_batch_size: 32
+eval_iters: 16
+num_workers: 0
+device: cuda
+max_train_steps: 50000
+num_bites: 1
+
+optim: Adam
+optim_args:
+  lr: 0.0001
+lr_sched: StepLR
+lr_sched_args:
+  step_size: 10000
+  gamma: 0.5
+
+summary_interval: 250
+eval_interval: 1000
+ckpt_interval: 2500

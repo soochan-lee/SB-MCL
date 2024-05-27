@@ -1,0 +1,6 @@
+include: cfg/model/oml_ddpm.yaml
+
+reptile: True
+reptile_lr: 0.001
+optim_args:
+  lr: 0.0005

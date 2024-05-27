@@ -1,0 +1,3 @@
+include:
+  - cfg/data/casia.yaml
+  - cfg/model/pn.yaml

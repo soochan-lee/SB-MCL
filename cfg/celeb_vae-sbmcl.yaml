@@ -1,0 +1,6 @@
+include:
+  - cfg/data/celeb.yaml
+  - cfg/model/sbmcl_vae.yaml
+
+optim_args:
+  lr: 0.001

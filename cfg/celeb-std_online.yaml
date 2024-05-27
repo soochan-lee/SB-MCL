@@ -1,0 +1,3 @@
+include: cfg/celeb-std.yaml
+
+online: True

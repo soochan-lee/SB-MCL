@@ -1,0 +1,17 @@
+include: cfg/model/base.yaml
+
+backbone: UNet
+unet_args:
+  base_channels: 64
+  channel_mults: [1, 2, 2, 2]
+  time_emb_dim: 256
+  num_res_blocks: 2
+  num_bottleneck_layer: 2
+
+diffusion_args:
+  n_times: 1000
+  beta_min: 0.0001
+  beta_max: 0.02
+
+batch_size: 8
+max_ex_per_batch: 6000

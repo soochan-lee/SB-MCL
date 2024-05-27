@@ -1,0 +1,22 @@
+include: cfg/model/base.yaml
+
+model: ContinualTransformer
+
+# Class representation
+y_vocab: 500
+y_len: 1
+
+# ContinualTransformer
+tf_attn: vanilla  # vanilla or elu (Linear Transformer) or favor (Performer)
+tf_layers: 4
+tf_heads: 8
+tf_ff_dim: 1024
+tf_dropout: 0.1
+tf_ln: False
+qk_dim: 64
+v_dim: 64
+attn_loss: 1.0
+attn_loss_heads: 4
+attn_loss_steps: 10000
+distributed_loss: False
+distributed_loss_steps: 10000

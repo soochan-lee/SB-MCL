@@ -1,0 +1,26 @@
+include:
+  - cfg/data/casia_comp.yaml
+  - cfg/model/sbmcl.yaml
+
+xy_encoder: CompXYEncoder
+xy_enc_args:
+  # input_shape and output_shape will be determined in the code
+  output_activation: none
+
+xz_enc_args:
+  # input_shape and output_shape will be determined in the code
+  hidden_dim: 512
+  layers: 2
+  output_activation: relu
+xz_agg: concat
+
+y_decoder: CnnDecoder
+y_dec_args:
+  input_shape: [512]
+
+z_dim: 512
+
+optim_args:
+  lr: 0.003
+
+sbmcl_kl_weight: 0.001

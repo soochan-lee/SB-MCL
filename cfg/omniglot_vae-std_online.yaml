@@ -1,0 +1,3 @@
+include: cfg/omniglot_vae-std.yaml
+
+online: True

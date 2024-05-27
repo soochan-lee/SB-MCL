@@ -1,0 +1,3 @@
+include: cfg/celeb_vae-std.yaml
+
+online: True

@@ -1,0 +1,7 @@
+include:
+  - cfg/model/ddpm.yaml
+  - cfg/model/std.yaml
+
+model: StdDDPM
+eval_t_num: 128
+eval_t_batch: 16

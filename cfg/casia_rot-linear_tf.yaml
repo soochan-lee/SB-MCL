@@ -1,0 +1,3 @@
+include:
+  - cfg/data/casia_rot.yaml
+  - cfg/model/linear_tf.yaml

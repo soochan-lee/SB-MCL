@@ -1,0 +1,16 @@
+include:
+  - cfg/data/omniglot.yaml
+  - cfg/model/std.yaml
+
+encoder: CnnEncoder
+enc_args:
+  output_shape: [512]
+  output_activation: relu
+
+mlp_args:
+  hidden_dim: 512
+  layers: 2
+  output_activation: none
+
+decoder: Identity
+dec_args: {}

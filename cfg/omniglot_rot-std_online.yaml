@@ -1,0 +1,3 @@
+include: cfg/omniglot_rot-std.yaml
+
+online: True

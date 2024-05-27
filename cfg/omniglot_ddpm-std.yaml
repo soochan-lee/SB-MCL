@@ -1,0 +1,3 @@
+include:
+  - cfg/data/omniglot.yaml
+  - cfg/model/std_ddpm.yaml

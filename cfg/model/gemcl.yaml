@@ -1,0 +1,4 @@
+include: cfg/model/pn.yaml
+model: GeMCL
+
+map : False

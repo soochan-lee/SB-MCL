@@ -1,0 +1,8 @@
+include: cfg/model/base.yaml
+
+model: PN
+
+x_encoder: CnnEncoder
+x_enc_args:
+  output_shape: [512]
+  output_activation: none

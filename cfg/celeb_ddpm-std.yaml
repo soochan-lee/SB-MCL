@@ -1,0 +1,3 @@
+include:
+  - cfg/data/celeb.yaml
+  - cfg/model/std_ddpm.yaml

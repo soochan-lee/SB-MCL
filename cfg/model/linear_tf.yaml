@@ -1,0 +1,8 @@
+include: cfg/model/tf.yaml
+
+# ContinualTransformer
+tf_attn: elu  # vanilla or elu (Linear Transformer) or favor (Performer)
+qk_dim: 512
+v_dim: 512
+
+y_vocab: 50

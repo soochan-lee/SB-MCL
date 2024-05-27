@@ -1,0 +1,22 @@
+include: cfg/model/base.yaml
+
+model: Sbmcl
+
+x_encoder: CnnEncoder
+x_enc_args:
+  output_shape: [512]
+  output_activation: relu
+
+xz_enc_args:
+  hidden_dim: 512
+  layers: 2
+  output_activation: relu
+
+z_dim: 512
+eval_z_samples: 5
+map: False
+train_recon: True
+sbmcl_kl: True
+
+optim_args:
+  lr: 0.003

@@ -1,0 +1,23 @@
+include: cfg/model/base.yaml
+
+model: OML
+
+# OML
+inner_lr: 0.03
+learnable_lr: True
+
+# Encoder
+encoder: CnnEncoder
+enc_args:
+  output_shape: [512]
+  output_activation: relu
+
+maml_mlp_args:
+  hidden_dim: 512
+  layers: 2
+  output_activation: none
+
+decoder: Identity
+dec_args: {}
+
+reptile: False

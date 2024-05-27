@@ -1,0 +1,4 @@
+include:
+  - cfg/omniglot_vae-sbmcl.yaml
+
+map: True

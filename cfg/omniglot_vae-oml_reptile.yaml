@@ -1,0 +1,9 @@
+include:
+  - cfg/data/omniglot.yaml
+  - cfg/model/oml_vae.yaml
+
+inner_lr: 0.03
+optim_args:
+  lr: 0.001
+reptile: True
+reptile_lr: 0.1

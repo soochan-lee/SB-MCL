@@ -1,0 +1,20 @@
+include:
+  - cfg/data/celeb_comp.yaml
+  - cfg/model/std.yaml
+
+# Encoder
+encoder: CnnEncoder
+enc_args:
+  output_shape: [512]
+  output_activation: relu
+
+# MLP
+mlp_args:
+  hidden_dim: 512
+  layers: 2
+  output_activation: relu
+
+# Decoder
+decoder: CnnDecoder
+dec_args:
+  input_shape: [512]

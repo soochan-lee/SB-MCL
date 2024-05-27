@@ -1,0 +1,4 @@
+include:
+  - cfg/celeb_comp-sbmcl.yaml
+
+map: True

@@ -1,0 +1,4 @@
+include:
+  - cfg/omniglot_rot-sbmcl.yaml
+
+map: True

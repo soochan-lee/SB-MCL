@@ -1,0 +1,3 @@
+include:
+  - cfg/data/casia_comp.yaml
+  - cfg/model/tf.yaml

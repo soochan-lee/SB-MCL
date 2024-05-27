@@ -1,0 +1,10 @@
+# Data
+dataset: omniglot
+input_type: image  # image or vector
+output_type: class  # class or vector
+
+tasks: 10
+train_shots: 10
+test_shots: 10
+
+x_shape: [1, 32, 32]

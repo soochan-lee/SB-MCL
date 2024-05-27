@@ -1,0 +1,12 @@
+include:
+  - cfg/data/casia_comp.yaml
+  - cfg/model/oml.yaml
+
+maml_mlp_args:
+  hidden_dim: 512
+  layers: 2
+  output_activation: relu  # not final output
+
+decoder: CnnDecoder
+dec_args:
+  input_shape: [512]

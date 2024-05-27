@@ -1,0 +1,3 @@
+include:
+  - cfg/model/oml.yaml
+  - cfg/data/celeb.yaml

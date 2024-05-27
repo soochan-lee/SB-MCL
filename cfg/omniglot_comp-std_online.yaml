@@ -1,0 +1,3 @@
+include: cfg/omniglot_comp-std.yaml
+
+online: True

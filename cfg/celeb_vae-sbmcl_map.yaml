@@ -1,0 +1,4 @@
+include:
+  - cfg/celeb_vae-sbmcl.yaml
+
+map: True

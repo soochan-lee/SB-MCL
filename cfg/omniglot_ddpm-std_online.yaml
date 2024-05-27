@@ -1,0 +1,3 @@
+include: cfg/omniglot_ddpm-std.yaml
+
+online: True

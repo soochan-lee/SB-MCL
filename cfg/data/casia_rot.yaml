@@ -1,0 +1,12 @@
+# Data
+dataset: casia_rot
+input_type: image
+output_type: angle
+meta_test_tasks: 1000
+
+tasks: 10
+train_shots: 10
+test_shots: 10
+
+x_shape: [1, 32, 32]
+y_shape: [2]

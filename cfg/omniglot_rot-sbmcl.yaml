@@ -1,0 +1,29 @@
+include:
+  - cfg/data/omniglot_rot.yaml
+  - cfg/model/sbmcl.yaml
+
+y_encoder: Mlp
+y_enc_args:
+  hidden_dim: 512
+  layers: 2
+  output_shape: [512]
+  output_activation: relu
+
+xy_enc_args:
+  # input_shape and output_shape will be determined in the code
+  hidden_dim: 512
+  layers: 2
+  output_activation: none
+xy_agg: concat
+
+y_decoder: Mlp
+y_dec_args:
+  hidden_dim: 512
+  layers: 2
+  input_shape: [512]
+  output_activation: none
+
+optim_args:
+  lr: 0.0001
+
+sbmcl_kl_weight: 0.001

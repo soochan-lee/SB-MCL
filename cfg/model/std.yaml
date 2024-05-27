@@ -1,0 +1,16 @@
+include: cfg/model/base.yaml
+
+model: Std
+
+# Training
+batch_size: 16
+eval_batch_size: 32
+max_train_steps: 10000
+
+lr_sched: StepLR
+lr_sched_args:
+  step_size: 2000
+  gamma: 0.5
+
+summary_interval: 50
+eval_interval: 100

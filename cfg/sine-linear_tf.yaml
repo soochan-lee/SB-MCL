@@ -1,0 +1,3 @@
+include:
+  - cfg/data/sine.yaml
+  - cfg/model/linear_tf.yaml

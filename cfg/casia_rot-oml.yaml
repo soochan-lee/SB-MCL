@@ -1,0 +1,5 @@
+include:
+  - cfg/data/casia_rot.yaml
+  - cfg/model/oml.yaml
+
+inner_lr: 0.0001

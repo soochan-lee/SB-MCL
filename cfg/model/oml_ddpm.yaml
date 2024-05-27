@@ -1,0 +1,12 @@
+include: cfg/model/ddpm.yaml
+
+model: OmlDDPM
+
+backbone: FastUNet
+
+# OML
+inner_lr: 0.001
+learnable_lr: True
+reptile: False
+optim_args:
+  lr: 0.001

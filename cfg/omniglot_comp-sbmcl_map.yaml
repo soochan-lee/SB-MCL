@@ -1,0 +1,4 @@
+include:
+  - cfg/omniglot_comp-sbmcl.yaml
+
+map: True

@@ -1,0 +1,11 @@
+include:
+  - cfg/data/sine.yaml
+  - cfg/model/oml.yaml
+
+# Encoder
+encoder: Mlp
+enc_args:
+  layers: 2
+  hidden_dim: 512
+  output_activation: relu
+  output_shape: [512]

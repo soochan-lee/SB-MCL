@@ -1,0 +1,5 @@
+include:
+  - cfg/data/celeb.yaml
+  - cfg/model/oml_ddpm.yaml
+
+max_ex_per_batch: 6000

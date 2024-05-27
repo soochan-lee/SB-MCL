@@ -1,0 +1,13 @@
+# Data
+dataset: celeb_comp
+input_type: image  # image or vector
+output_type: image  # class or vector
+#output_activation: tanh  # none or tanh
+meta_test_tasks: 1000
+
+tasks: 10
+train_shots: 10
+test_shots: 10
+
+x_shape: [3, 16, 32]
+y_shape: [3, 16, 32]

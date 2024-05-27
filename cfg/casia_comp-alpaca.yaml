@@ -1,0 +1,8 @@
+include:
+  - cfg/data/casia_comp.yaml
+  - cfg/model/alpaca.yaml
+
+x_encoder: CnnEncoder
+x_enc_args:
+  output_shape: [512]
+  output_activation: relu
